@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S of the trapezoid</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      var a = prompt(
+        "Введите длину основания трапеции, чтобы вычислить площать(S)"
+      );
+      var b = prompt("Введите длину второго основания");
+      var h = prompt("Введите высоту трапеции");
+      a = parseInt(a);
+      b = parseInt(b);
+      h = parseInt(h);
+      var c = ((a + b) / 2) * h;
+      alert("Площадь трапеции будет равна " + c);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      var usd = 72.76;
+      var eur = 86.15;
+      var rub = prompt("Введите сумму в рублях для конвертации в USD и EUR");
+      usd = parseInt(usd);
+      eur = parseInt(eur);
+      rub = parseInt(rub);
+      var summary = rub / usd;
+      alert("Итого: " + summary + " USD");
+      summary = rub / eur;
+      alert("Итого: " + summary + " EUR");
+    </script>
+  </body>
+</html>
