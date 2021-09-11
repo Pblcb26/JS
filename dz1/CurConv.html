@@ -11,13 +11,19 @@
       var usd = 72.76;
       var eur = 86.15;
       var rub = prompt("Введите сумму в рублях для конвертации в USD и EUR");
-      usd = parseInt(usd);
-      eur = parseInt(eur);
       rub = parseInt(rub);
-      var summary = rub / usd;
-      alert("Итого: " + summary + " USD");
-      summary = rub / eur;
-      alert("Итого: " + summary + " EUR");
+      var summaryusd = rub / usd;
+      var summaryeur = rub / eur;
+      alert(
+        rub +
+          " RUB = " +
+          summaryusd.toFixed(2) +
+          " USD\n" +
+          rub +
+          " RUB = " +
+          summaryeur.toFixed(2) +
+          " EUR"
+      );
     </script>
   </body>
 </html>
